@@ -32,8 +32,6 @@ void loop() {
 }
 
 const String unlockstring = "UNLOCK";
-byte close[] = {0xA0, 0x01, 0x01, 0xA2};
-byte open[] = {0xA0, 0x01, 0x00, 0xA1};
 
 void callback(char* topic, byte* payload, unsigned int length) {
   String message = "";
